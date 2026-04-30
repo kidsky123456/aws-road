@@ -308,14 +308,14 @@ const getReadOnlyClient = async () => {
 
 ## 三、通过 ROAD 自动部署
 
-1. **确认权限**：您已获得 `ADFS-RoadAutoDeploy` 角色以及对应环境（Dev/PreProd/Prod）的 Entitlement。申请链接见您提供的 ServiceNow URL【IMG_3139†L8-L20】。
+1. **确认权限**：您已获得 `AWS-RoadAutoDeploy` 角色以及对应环境（Dev/PreProd/Prod）的 Entitleme。
 
 2. **提交代码**：将上述 Terraform 文件推送到 ROAD 监控的仓库：
    ```
-   https://alm-github.systems.uk.hsbc/TFX/tfps-foundation-teraform
+   https:/github/xxxx-teraform
    ```
 
-3. **CI/CD 流水线**：CodePipeline `tfp-foundation-teraform-cd-pipeline` 会自动触发，执行 `terraform plan` 并等待批准（生产环境需手动审核）【IMG_3139†L34】。
+3. **CI/CD 流水线**：CodePipeline teraform-cd-pipeline` 会自动触发，执行 `terraform plan` 并等待批准（生产环境需手动审核。
 
 4. **审批与应用**：在 CodePipeline 控制台中批准 “Deploy” 阶段。
 
