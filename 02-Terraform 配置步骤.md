@@ -4,7 +4,7 @@
 
 ## 📘 参照 ROAD 方案在 AWS 上部署 Aurora + RDS Proxy
 
-您的现有基础设施 `tb-fdr-eu-rds-proxy`（PostgreSQL）已具备读写和只读两个代理端点，并与 Secrets Manager 集成。下面提供一套与 ROAD 自动化 CI/CD 流程完全兼容的 Terraform 配置，使您能够用代码复现这套成熟架构。
+您的现有基础设施 `tb-kk-rds-proxy`（PostgreSQL）已具备读写和只读两个代理端点，并与 Secrets Manager 集成。下面提供一套与 ROAD 自动化 CI/CD 流程完全兼容的 Terraform 配置，使您能够用代码复现这套成熟架构。
 
 ---
 
