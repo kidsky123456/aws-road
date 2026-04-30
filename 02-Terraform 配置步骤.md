@@ -103,7 +103,7 @@ resource "aws_secretsmanager_secret_version" "db_creds" {
 
 ```hcl
 resource "aws_rds_cluster" "aurora" {
-  cluster_identifier = "tb-fdr-eu"
+  cluster_identifier = "tb-kk"
   engine             = "aurora-postgresql"
   engine_mode        = "provisioned"          # Serverless v2 必须
   engine_version     = "16.4"
